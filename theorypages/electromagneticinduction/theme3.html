@@ -1,0 +1,119 @@
+﻿ <!DOCTYPE html>
+ <html>
+	<head>
+		<title>Энергия магнитного поля</title>
+		<meta charset="utf-8">
+		<link rel="shortcut icon" href="../../favicon.ico" type="image/ico">
+		<script src="../../resources/js/jquery-3.1.1.min.js"></script>
+		<link rel="stylesheet" href="../../resources/css/bootstrap.min.css">
+		<script src="../../resources/js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="../../resources/katex/katex.min.css">
+		<script src="../../resources/katex/katex.min.js"></script>
+		<script src="../../resources/katex/contrib/auto-render.min.js"></script>
+		<style>
+			body {
+				background-image: url(../../resources/img/background.jpg);
+			}
+			p {
+				word-wrap: normal;
+				margin-left:40px;
+				margin-right:40px;
+				font-size: 20px;
+			}
+			h1 {
+				text-align: center;
+				margin-top: 60px;
+			}
+			h3 {
+				text-align: center;
+			}
+			img {
+				display: block;
+				margin-left: auto;
+				margin-right: auto;
+			}
+			.katex {
+				font-size:25px;
+			}
+			p[style] {
+				font-size:13px;
+			}
+			
+		</style>
+	</head>
+	<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="dropdown">
+         <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Магнитное поле<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+            <li><a href="../magneticfield/theme1.html">Магнитное поле, его свойства</a></li>
+            <li><a href="../magneticfield/theme2.html">Магнитное поле постояннoго электрического тока</a></li>
+            <li><a href="../magneticfield/theme3.html">Действие магнитного поля на движущийся электрический заряд</a></li>
+			<li><a href="../magneticfield/theme4.html">Применение сил Ампера и Лоренца в науке и технике. Амперметр, телеграф, электромагниты, масс-анализаторы</a></li>
+          </ul>
+        </li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Электромагнитная индукция<span class="caret"></span></a>
+           <ul class="dropdown-menu">
+            <li><a href="../electromagneticinduction/theme1.html">Явление электромагнитной индукции</a></li>
+            <li><a href="../electromagneticinduction/theme2.html">Движение проводника в магнитном поле</a></li>
+            <li><a href="../electromagneticinduction/theme3.html">Энергия магнитного поля</a></li>
+			<li><a href="../electromagneticinduction/theme4.html">Трансформатор</a></li>
+          </ul>
+        </li>
+		 <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Оптика<span class="caret"></span></a>
+           <ul class="dropdown-menu">
+            <li><a href="../optics/theme1.html">Природа света. Скорость света</a></li>
+            <li><a href="../optics/theme2.html">Законы геометрической оптики</a></li>
+          </ul>
+        </li>
+      </ul>
+	    <ul class="nav navbar-nav navbar-right" style="padding-right: 14px;">
+			<li><a href="../../home.html">Меню</a></li>
+	  </ul>
+	</nav>
+	<h1>Энергия магнитного поля</h1>
+	<p>На этом уроке мы повторим явление самоиндукции. Ознакомимся с энергией магнитного поля. Также узнаем о том, как вычислить плотность энергии магнитного поля.</p>
+	<h3>Энергия магнитного поля</h3>
+	<p>Необ­хо­ди­мо вы­яс­нить, от­ку­да бе­рёт­ся энер­гия и как её рас­счи­тать?</p>
+	<p>Рас­смот­рим опыт. Пусть име­ет­ся элек­три­че­ская цепь, в ко­то­рой ка­туш­ка с ин­дук­тив­но­стью (L) по­сле­до­ва­тель­но со­еди­не­на с лам­поч­кой и через пе­ре­клю­ча­тель может быть за­мкну­та либо на ис­точ­ник по­сто­ян­но­го тока (\( \varepsilon \) ), либо на ре­зи­стор с со­про­тив­ле­ни­ем (R) (рис.1).  </p>
+	<p><img class="img-rounded" src="../../resources/img/theorypageimgs/theme7img1.png"></p>
+	<p style="text-align: center">Рис. 1</p>
+	<p>Если в цепь вклю­чить ам­пер­метр, то можно по­лу­чить гра­фик за­ви­си­мо­сти тока в цепи от вре­ме­ни. Сна­ча­ла, за­мкнём ка­туш­ку на ис­точ­ник ЭДС – в цепи будет про­те­кать ток І (рис. 2).</p>
+	<p><img class="img-rounded" src="../../resources/img/theorypageimgs/theme7img2.png"></p>
+	<p style="text-align: center">Рис. 2</p>
+	<p>Затем, в неко­то­рый мо­мент вре­ме­ни \( t_0 \) пе­ре­клю­чим ключ, за­мы­кая ка­туш­ку на ре­зи­стор R – в цепи будет про­те­кать убы­ва­ю­щий ток. С мо­мен­та вре­ме­ни \( t_0 \) до пол­но­го ис­чез­но­ве­ния тока прой­дёт опре­де­лён­ное время, в те­че­ние ко­то­ро­го будет про­ис­хо­дить пе­ре­нос за­ря­да в цепи ка­туш­ки и ре­зи­сто­ра. Сле­до­ва­тель­но, будет со­вер­шать­ся ра­бо­та – убы­ва­ние тока в ка­туш­ке вы­зо­вет яв­ле­ние са­мо­ин­дук­ции и в ней воз­ник­нет ЭДС са­мо­ин­дук­ции. Разо­бьём уча­сток 2 дви­же­ния тока на бес­ко­неч­но малые ин­тер­ва­лы вре­ме­ни \( \Delta t \), такие, что на каж­дом ин­тер­ва­ле из­ме­не­ния тока можно счи­тать ли­ней­ны­ми (рис.3).</p>
+	<p><img class="img-rounded" src="../../resources/img/theorypageimgs/theme7img3.png"></p>
+	<p style="text-align: center">Рис. 3</p>
+	<p>На каж­дом таком участ­ке будет со­вер­шать­ся ра­бо­та чис­лен­но рав­ная про­из­ве­де­нию ЭДС ин­дук­ции на пе­ре­но­си­мый за этот ин­тер­вал вре­ме­ни заряд</p>
+	<p>\( \Delta A = \Delta \varepsilon_i \cdot \Delta q \) (1.2)</p>
+	<p>\( \varepsilon = -L \cdot \frac{I}{t} \) (1.3)</p>
+	<p>Представим выражение для ЭДС самоиндукции в работу на интервале времени \( \Delta t \)</p>
+	<p>\( \Delta A = -L \cdot \frac{\Delta I}{\Delta t} \cdot \Delta q \) (1.4)</p>
+	<p>От­но­ше­ние пе­ре­не­сён­но­го за­ря­да \( \Delta q \) к ин­тер­ва­лу вре­ме­ни \( \Delta t \) яв­ля­ет­ся сред­ним зна­че­ни­ем тока на этом эле­мен­тар­ном ин­тер­ва­ле вре­ме­ни.</p>
+	<p>\( \Delta q = I \cdot \Delta t = \frac{I}{2} \cdot \Delta t \) (1.5)</p>
+	<p>Тогда вы­ра­же­ние для ра­бо­ты на эле­мен­тар­ном ин­тер­ва­ле вре­ме­ни при­мет вид.</p>
+	<p>\( \Delta A = -L \cdot \Delta I \cdot \frac{I}{2} \) (1.6)</p>
+	<p>Если про­сум­ми­ро­вать ра­бо­ту по всем эле­мен­тар­ным участ­кам \( \Delta t \) от \( t_0 \) до 0 по­лу­чим вы­ра­же­ние для пол­ной ра­бо­ты за весь ин­тер­вал вре­ме­ни.</p>
+	<p>\( A = L \cdot \frac{I^2}{2} = W_m \) (1.7)</p>
+	<p>Такая ра­бо­та пой­дёт на на­гре­ва­ние про­вод­ни­ков внут­ри ка­туш­ки за­мкну­той на ре­зи­стор.</p>
+	<p>Вы­ра­зим энер­гию маг­нит­но­го поля, через па­ра­мет­ры маг­нит­но­го поля. Для ка­туш­ки ин­дук­тив­ность равна про­из­ве­де­нию маг­нит­ной по­сто­ян­ной на объём ка­туш­ки и квад­рат числа вит­ков на еди­ни­це длины.</p>
+	<p>\( L = \mu \cdot \mu_0 \cdot V \cdot n^2 \) (1.8)</p>
+	<p>\( n = \frac{N}{t} \) (1.9)</p>
+	<p>Мо­дуль маг­нит­ной ин­дук­ции ка­туш­ки опре­де­ля­ет­ся со­от­но­ше­ни­ем (1.10).</p>
+	<p>\( B = \mu \cdot \mu_0 \cdot I \cdot N \) (1.10)</p>
+	<p>Тогда для энер­гии маг­нит­но­го поля по­лу­чим вы­ра­же­ние (1.11). Раз­де­лим вы­ра­же­ние для энер­гии маг­нит­но­го поля ка­туш­ки на её объём, счи­тая, что всё маг­нит­ное поле со­сре­до­то­че­но в объ­ё­ме ка­туш­ки (1.12).</p>
+	<p>\( W_m = \frac{B^2}{2 \cdot \mu \cdot \mu_0 } \cdot V \) (1.11)</p>
+	<p>\( \omega_m = \frac{B^2}{2 \cdot \mu \cdot \mu_0} \) (1.12)</p>
+	<h3>Плотность энергии магнитного поля</h3>
+	<p>Раз­ви­вая тео­рию элек­тро­маг­не­тиз­ма, Джеймс Кларк Макс­велл по­ка­зал, что по­лу­чен­ное вы­ра­же­ние для длин­ной ка­туш­ки спра­вед­ли­во для любых маг­нит­ных полей, а по­лу­чен­ная ве­ли­чи­на на­зы­ва­ет­ся плот­ность энер­гии.</p>
+	<h3>Итоги</h3>
+	<p>При за­мы­ка­нии цепи ток на­рас­та­ет не мгно­вен­но, а в те­че­ние неко­то­ро­го вре­ме­ни, по­сколь­ку ис­точ­ник тока дол­жен со­вер­шить ра­бо­ту про­тив ЭДС са­мо­ин­дук­ции. Эта ра­бо­та ак­ку­му­ли­ру­ет­ся в маг­нит­ном поле, ко­то­рое окру­жа­ет про­вод­ник с током. В по­след­ствие, энер­гия маг­нит­но­го поля пре­об­ра­зу­ет­ся в ра­бо­ту вих­ре­во­го элек­три­че­ско­го поля, ко­то­рое воз­ни­ка­ет в про­вод­ни­ке после раз­мы­ка­ния цепи и, затем, неко­то­рое время под­дер­жи­ва­ет ин­дук­ци­он­ный ток в этом про­вод­ни­ке. Энер­гия маг­нит­но­го поля вы­чис­ля­ет­ся по фор­му­ле по­ло­ви­на про­из­ве­де­ния ин­дук­тив­но­сти про­вод­ни­ка на квад­рат силы тока, про­те­ка­ю­ще­го через про­вод­ник.</p>
+	<p>\( W_m = \frac{LI^2}{2} \) (1.13)</p>
+	<script>
+		renderMathInElement(document.body);
+	</script>
+	</body>
+ </html>
